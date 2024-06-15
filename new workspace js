@@ -1,0 +1,38 @@
+ // JavaScript to handle adding tasks and delete button click
+ document.addEventListener('DOMContentLoaded', function() {
+    const addTaskButton = document.getElementById('add-task-button');
+    const newTaskInput = document.getElementById('new-task-input');
+    const todoList = document.getElementById('todo-list');
+
+    addTaskButton.addEventListener('click', function() {
+        const taskText = newTaskInput.value.trim();
+        if (taskText !== "") {
+            const newTaskItem = document.createElement('li');
+            newTaskItem.textContent = taskText;
+            todoList.appendChild(newTaskItem);
+            newTaskInput.value = "";
+        }
+    });
+
+    const deleteButtons = document.querySelectorAll('.delete-button');
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.cardss');
+            card.remove();
+        });
+    });
+
+    const backButtons = document.querySelectorAll('.back-button');
+    backButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Back button clicked!');
+            // Add your back button functionality here
+        });
+    });
+
+    const goBackButton = document.getElementById('go-back-button');
+    goBackButton.addEventListener('click', function() {
+        alert('Going back to the dashboard!');
+        // Add your "go back to dashboard" functionality here
+    });
+});

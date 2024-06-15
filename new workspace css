@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #CDB599FF;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.workspace-title {
+    position: absolute;
+    top: 30px;
+    bottom: 50px;
+    margin-right: 20px;
+}
+
+.workspace-title h1 {
+    margin: 0;
+    font-size: 35px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.new-task-container {
+   margin-right: 800px;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#new-task-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-task-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #42EADDFF;
+    color: rgb(10, 9, 9);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    padding: 60px;
+}
+
+.cardss {
+    position: relative;
+    width: 400px; /* Width of the card */
+    height: 400px; /* Adjusted height for tasks */
+    background-color: #eee5aa ;
+    border: 2px solid #070000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cardss h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.task-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+
+
+
+.back-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #f3c7b4;
+    color: rgb(14, 11, 11);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #22092C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-button-container {
+    margin-top: 20px;
+}
+
+#go-back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

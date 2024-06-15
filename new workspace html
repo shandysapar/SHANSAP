@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty Card</title>
+    <link rel="stylesheet" href="workspace.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="workspace-title">
+        <h1>Workspaces</h1>
+    </div>
+    <div class="new-task-container">
+        <input type="text" id="new-task-input" placeholder="New Task">
+        <button id="add-task-button">Add Task</button>
+    </div>
+    <div class="card-container">
+        <div class="cardss">
+            <h2>Todo</h2>
+            <ul class="task-list" id="todo-list">
+                <!-- Tasks will be appended here -->
+            </ul>
+            <div class="card-buttons">
+                <button class="back-button">Back</button>
+                <button class="delete-button">Delete</button>
+            </div>
+        </div>
+        <div class="cardss">
+            <h2>Pending</h2>
+            <ul class="task-list" id="pending-list">
+                <!-- Tasks will be appended here -->
+            </ul>
+            <div class="card-buttons">
+                <button class="back-button">Back</button>
+                <button class="delete-button">Delete</button>
+            </div>
+        </div>
+        <div class="cardss">
+            <h2>Finished</h2>
+            <ul class="task-list" id="finished-list">
+                <!-- Tasks will be appended here -->
+            </ul>
+            <div class="card-buttons">	
+                <button class="back-button">Back</button>
+                <button class="delete-button">Delete</button>
+            </div>
+        </div>
+    </div>
+
+	<div class="dashboard-button-container">
+        <button id="go-back-button">GO BACK TO DASHBOARD</button>
+    </div>
+
+
+
+	
+</body>
+</html>

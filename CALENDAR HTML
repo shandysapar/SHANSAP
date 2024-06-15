@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calendar_events.css">
+</head>
+<body>
+    <div id="title-container">
+        <div id="title-box">
+            <h1>Calendar/Event</h1>
+        </div>
+        <a id="back-button" href="index.html">Back to Dashboard</a>
+    </div>
+    <div id="main-container">
+        <div id="calendar-container">
+            <div id="calendar-header">
+                <button id="prev">‹</button>
+                <div id="month-year"></div>
+                <button id="next">›</button>
+            </div>
+            <div id="calendar-days">
+                <div class="day-name">Sun</div>
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thu</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+            </div>
+            <div id="calendar-dates"></div>
+        </div>
+        <div id="event-container">
+            <h2>Events</h2>
+            <div id="event-card">
+                <ul id="event-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Enter Event</h2>
+            <input type="text" id="event-input" placeholder="Event details">
+            <input type="time" id="event-time">
+            <button id="save-event">Save</button>
+        </div>
+    </div>
+
+    <script src="calendar_events.js"></script>
+</body>
+</html>
